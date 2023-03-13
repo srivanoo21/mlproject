@@ -6,9 +6,8 @@ def error_message_detail(error, error_detail:sys):
     this function will return the error message in a specific format
     '''
     _, _, exc_tb=error_detail.exc_info()
-    filename=exc_tb.tb_frame.f_code.co_filename
-    error_message="Error occured in python script name [{0}] line number [{1}] error message [{2}]".
-    format(filename, exc_tb.tb_lineno, str(error))
+    file_name=exc_tb.tb_frame.f_code.co_filename
+    error_message="Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(file_name, exc_tb.tb_lineno, str(error))
     
     return error_message
 
