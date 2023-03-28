@@ -33,6 +33,8 @@ class ModelTrainer:
             xtrain, ytrain, xtest, ytest =  (train_array[:, :-1], train_array[:,-1], 
                                             test_array[:, :-1], test_array[:,-1])
 
+            logging.info("Training and testing data has been split")
+
             models = {
                 "Random Forest": RandomForestRegressor(),
                 "Decision Tree": DecisionTreeRegressor(),
@@ -44,9 +46,52 @@ class ModelTrainer:
                 "AdaBoost Regressor": AdaBoostRegressor()
             }
             
-            logging.info("Training and testing data has been split")
+            params = {
+                "Random Forest": 
+                {
+                    "n_estimators": [40, 60, 80, 100, 120], 
+                    "max_depth": [5, 8, 10], 
+                    "min_samples_leaf": [2, 4, 6, 8]
+                },
 
-            model_report: dict=evaluate_models(xtrain=xtrain, xtest=xtest, ytrain=ytrain, ytest=ytest, models=models)
+                "Decision Tree":
+                {
+                    "criterion": ['squared_error', 'absolute_error'],
+                    "min_samples_leaf": [1, 2, 3]
+                },
+
+                "Gradient Boosting": 
+                {
+                    "loss": ['squared_error', 'absolute_error'],
+                    "n_estimators": [50, 80, 100, 120]
+                },
+
+                "Linear Regression": {},
+
+                "K-Neighbors Regressor": 
+                {
+                    "n_neighbors": [3, 4, 6, 8, 10]
+                },
+
+                "XgbRegressor": 
+                {
+                    "n_estimators": [50, 80, 100, 120],
+                    "max_depth": [4, 6, 8, 10],
+                    "eta": [0.3, 0.1, 0.01]
+                },
+
+                "CatBoosting Regressor": {},
+                
+                "AdaBoost Regressor": 
+                {
+                    "n_estimators": [50, 80, 100, 120],
+                    "learning_rate": [0.03, 0.05, 0.1, 0.001]
+                }
+            }
+
+
+            model_report: dict=evaluate_models(xtrain=xtrain, xtest=xtest, ytrain=ytrain, ytest=ytest, 
+                                                models=models, params=params)
             logging.info(f"Model report {model_report}")
 
             # Get the best model score
