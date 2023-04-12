@@ -1,0 +1,10 @@
+[ 2023-04-13 01:54:53,333 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-13 01:54:53,348 ] 224 werkzeug - INFO -  * Debugger PIN: 465-249-479
+[ 2023-04-13 01:55:33,794 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:33] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:55:33,950 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:33] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:55:34,003 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:55:50,662 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:50] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:55:50,682 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:50] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:55:54,582 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:54] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:55:54,597 ] 224 werkzeug - INFO - 127.0.0.1 - - [13/Apr/2023 01:55:54] "[33mGET / HTTP/1.1[0m" 404 -
+[ 2023-04-13 01:56:08,793 ] 224 werkzeug - INFO -  * Detected change in 'd:\\proj_files\\project_machine_learning\\mlproject\\app.py', reloading
