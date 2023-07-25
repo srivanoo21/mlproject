@@ -28,6 +28,6 @@ AWS_SECRET_ACCESS_KEY=
 
 AWS_REGION = us-east-1
 
-AWS_ECR_LOGIN_URI = 243031326484.dkr.ecr.us-east-1.amazonaws.com/anoopexampleecr
+AWS_ECR_LOGIN_URI = 243031326484.dkr.ecr.us-east-1.amazonaws.com
 
-ECR_REPOSITORY_NAME = ecrrepositoryname
+ECR_REPOSITORY_NAME = anoopexampleecr
