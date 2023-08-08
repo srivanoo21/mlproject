@@ -30,4 +30,4 @@ AWS_REGION = us-east-1
 
 AWS_ECR_LOGIN_URI = 243031326484.dkr.ecr.us-east-1.amazonaws.com
 
-ECR_REPOSITORY_NAME = ecr_name
+ECR_REPOSITORY_NAME = anoopexampleecr
